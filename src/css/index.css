@@ -1,0 +1,10 @@
+@tailwind base;
+
+@font-face {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+}
+
+@tailwind components;
+@tailwind utilities;
