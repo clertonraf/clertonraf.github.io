@@ -14,7 +14,11 @@ module.exports = {
       fontSize: {
         ...defaultTheme.fontSize,
         '9xl': '7rem',
-      }
+      },
+      height: {
+        ...defaultTheme.height,
+        vh: "calc(var(--vh, 1vh) * 100)"
+      },
     },
   },
   variants: {},

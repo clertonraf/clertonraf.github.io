@@ -20,7 +20,7 @@ const Head = ({ className }) => {
     )}
   </div>
   <DarkMode
-    className="focus:outline-none p-2"
+    className="focus:outline-none m-2 p-1 hover:shadow-outline rounded-full"
     iconClassName="h-12 w-12 troke-current text-purple-500"
   />
 </div>
