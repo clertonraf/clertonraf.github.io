@@ -1,0 +1,44 @@
+# Clerton Araujo
+
+> Senior Full Stack Engineer based in Berlin, Germany
+
+## About
+
+Clerton Araujo is a Senior Full Stack Engineer with 10+ years of experience designing, building, and scaling high-quality software across startups and multinational corporations. He holds a Master's in Computer Science (AI specialisation) and a Bachelor's in Computer Science from top Brazilian federal universities.
+
+He is currently a Senior Full Stack Software Engineer at Doctolib in Berlin, working on Germany's national telematic healthcare infrastructure. Past employers include Issuu, LQ Enterprise, Softplan, Bradesco Bank, and HSBC.
+
+## Contact
+
+- Website: https://clertonraf.github.io
+- Email: clertonfilho@gmail.com
+- LinkedIn: https://www.linkedin.com/in/clerton/
+- GitHub: https://github.com/clertonraf
+- Location: Berlin, Germany
+
+## Skills
+
+- **Languages**: TypeScript, JavaScript, Java, Python, Ruby, Scala, Elixir, OCaml, SQL, COBOL
+- **Frontend**: React, React Native, CSS, Design Systems
+- **Backend**: Ruby on Rails, Spring, Node.js, .NET Core
+- **Databases**: PostgreSQL, MongoDB, Microsoft SQL Server, Couchbase
+- **Cloud & DevOps**: AWS, Azure, Docker, Kubernetes, Datadog, Sentry
+- **Practices**: Agile, CI/CD, Test Automation, System Design, GDPR, eHealth compliance
+
+## Experience
+
+- **Doctolib** — Senior Full Stack Software Engineer, Berlin (Oct 2021 – Present)
+- **Issuu** — Full Stack Developer, Berlin (Dec 2020 – Sep 2021)
+- **LQ Enterprise** — Senior Software Engineer, Berlin (Jul 2018 – Dec 2020)
+- **Softplan** — Software Engineer, Florianópolis (May 2017 – Jun 2018)
+- **Bradesco Bank** — Lead Software Developer, Curitiba (Nov 2016 – Apr 2017)
+- **HSBC** — Senior Software Developer, Curitiba (Mar 2013 – Oct 2016)
+
+## Education
+
+- MSc Computer Science — Federal University of Pernambuco (2009–2011)
+- BSc Computer Science — Federal University of Campina Grande (2004–2009)
+
+## Domains
+
+Healthcare · Fintech · E-Government · Insurance · Digital Publishing · Public Sector
