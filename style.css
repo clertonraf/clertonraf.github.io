@@ -19,12 +19,14 @@ html, body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem 6rem;
+  overflow-x: hidden;
 }
 
 pre {
@@ -55,6 +57,8 @@ a:hover {
 
 .rule {
   color: var(--muted);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .muted {
