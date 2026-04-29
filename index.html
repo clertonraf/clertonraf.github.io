@@ -253,6 +253,43 @@
       font-size: 13px;
     }
 
+    .cv-download {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.35rem 0.85rem;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+    }
+
+    .cv-download:hover {
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+    }
+
+    .cv-download-sticky {
+      position: fixed;
+      top: 1.25rem;
+      right: 1.5rem;
+      padding: 0.35rem 0.85rem;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      background: var(--bg);
+      z-index: 100;
+    }
+
+    .cv-download-sticky:hover {
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+    }
+
     .edu-block {
       margin-bottom: 0.8rem;
     }
@@ -289,6 +326,8 @@
 </head>
 <body>
 <main>
+
+  <a href="Clerton_Araujo_Senior_FullStack.docx" download="Clerton_Araujo_Senior_FullStack.docx" class="cv-download-sticky">↓ download cv</a>
 
   <!-- NAME -->
   <div class="name-block">
