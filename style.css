@@ -56,9 +56,11 @@ a:hover {
 }
 
 .rule {
-  color: var(--muted);
+  border-bottom: 1px solid var(--muted);
+  font-size: 0;
+  line-height: 0;
+  height: 0;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .muted {
