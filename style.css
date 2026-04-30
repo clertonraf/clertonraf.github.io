@@ -266,6 +266,20 @@ a:hover {
   text-decoration: none;
 }
 
+.cv-alt-link {
+  margin-top: 0.3rem;
+  font-size: 11px;
+}
+
+.cv-alt-link a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.cv-alt-link a:hover {
+  color: var(--accent);
+}
+
 .lang-switcher {
   margin-top: 0.6rem;
   font-size: 11px;
