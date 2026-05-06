@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV of Clerton Araujo — Senior Full Stack Software Engineer with 10+ years of experience in TypeScript, React, Ruby on Rails, Java/Spring, and AWS/Azure across healthcare, fintech, and e-government.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://www.clerton.dev/cv">
+  <meta property="og:title" content="CV — Clerton Araujo, Senior Full Stack Engineer">
+  <meta property="og:description" content="Senior Full Stack Software Engineer with 10+ years building mission-critical platforms across healthcare, fintech, and e-government.">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Clerton">
+  <meta property="profile:last_name" content="Araujo">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.clerton.dev/cv">
+
+  <title>CV — Clerton Araujo, Senior Full Stack Engineer</title>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Clerton Araujo",
+    "jobTitle": "Senior Full Stack Software Engineer",
+    "description": "Senior Full Stack Software Engineer with 10+ years building mission-critical platforms across healthcare, fintech, and e-government. Currently at Doctolib (Berlin) leading integration with Germany's national telematic healthcare infrastructure for 90M+ patients.",
+    "url": "https://www.clerton.dev",
+    "email": "clertonfilho@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/clerton/",
+      "https://github.com/clertonraf"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Doctolib"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Federal University of Pernambuco"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Federal University of Campina Grande"
+      }
+    ],
+    "knowsAbout": [
+      "TypeScript", "JavaScript", "React", "React Native", "Redux",
+      "Ruby on Rails", "Java", "Spring Boot", "Node.js", "Python",
+      "Elixir", "Scala", "OCaml", "COBOL", ".NET Core",
+      "PostgreSQL", "MongoDB", "Microsoft SQL Server", "Couchbase",
+      "AWS", "Azure", "Docker", "Kubernetes", "Datadog", "Sentry",
+      "System Design", "Microservices", "GDPR", "eHealth compliance",
+      "TDD", "Agile", "Scrum"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ── Screen-only additions ── */
+    .cv-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 12px;
+    }
+
+    .cv-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+    }
+
+    .cv-nav a:hover {
+      color: var(--accent);
+    }
+
+    .print-btn {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      font-family: inherit;
+      background: transparent;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .print-btn:hover {
+      background: var(--accent);
+      color: var(--bg);
+      text-decoration: none;
+    }
+
+    .cv-summary {
+      line-height: 1.7;
+    }
+
+    .skills-section-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.4rem 1.5rem;
+    }
+
+    .skills-section-grid .label {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .skills-section-grid .value {
+      color: var(--fg);
+    }
+
+    .languages-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.3rem 1.5rem;
+    }
+
+    .languages-grid .lang-name {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .languages-grid .lang-level {
+      color: var(--fg);
+    }
+
+    .publication-block {
+      margin-bottom: 0.6rem;
+    }
+
+    .publication-title {
+      color: var(--fg);
+    }
+
+    .publication-meta {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 0.1rem;
+    }
+
+    .publication-meta a {
+      color: var(--muted);
+    }
+
+    .publication-meta a:hover {
+      color: var(--accent);
+    }
+
+    /* ── Print / PDF ── */
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      html, body {
+        background: #fff !important;
+        color: #111 !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 10.5pt !important;
+        line-height: 1.5 !important;
+        overflow-x: visible !important;
+      }
+
+      body {
+        max-width: 100% !important;
+        padding: 1.2cm 1.6cm !important;
+        margin: 0 !important;
+      }
+
+      .cv-nav,
+      .print-btn {
+        display: none !important;
+      }
+
+      a {
+        color: #111 !important;
+        text-decoration: none !important;
+      }
+
+      .section {
+        page-break-inside: avoid;
+        margin-bottom: 1.4rem !important;
+      }
+
+      .job-block {
+        page-break-inside: avoid;
+        margin-bottom: 1rem !important;
+      }
+
+      .section-title {
+        color: #111 !important;
+        letter-spacing: 0.08em;
+        font-size: 10pt !important;
+        border-bottom: 1.5px solid #111 !important;
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.1rem !important;
+      }
+
+      .rule {
+        display: none !important;
+      }
+
+      .name-block h1 {
+        color: #111 !important;
+        font-size: 20pt !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+      }
+
+      .name-block .tagline {
+        color: #444 !important;
+        font-size: 10pt !important;
+      }
+
+      .name-block {
+        margin-bottom: 1.2rem !important;
+      }
+
+      .job-company {
+        color: #1a6b3a !important;
+        font-size: 10.5pt !important;
+      }
+
+      .job-title {
+        color: #7a5a00 !important;
+        font-size: 10pt !important;
+      }
+
+      .job-period {
+        color: #555 !important;
+        font-size: 10pt !important;
+      }
+
+      .job-header {
+        border-bottom: 1px solid #bbb !important;
+      }
+
+      .job-bullets li {
+        color: #111 !important;
+      }
+
+      .job-bullets li::before {
+        color: #555 !important;
+      }
+
+      .stack-line {
+        color: #555 !important;
+        font-size: 9pt !important;
+      }
+
+      .stack-line span {
+        color: #555 !important;
+      }
+
+      .edu-degree {
+        color: #1a6b3a !important;
+      }
+
+      .edu-school {
+        color: #444 !important;
+      }
+
+      .edu-note {
+        color: #444 !important;
+      }
+
+      .skills-section-grid .label {
+        color: #1a6b3a !important;
+      }
+
+      .skills-section-grid .value {
+        color: #111 !important;
+      }
+
+      .languages-grid .lang-name {
+        color: #1a6b3a !important;
+      }
+
+      .languages-grid .lang-level {
+        color: #111 !important;
+      }
+
+      .publication-meta {
+        color: #444 !important;
+      }
+
+      .publication-meta a {
+        color: #444 !important;
+      }
+
+      .expertise-card {
+        border: 1px solid #bbb !important;
+      }
+
+      .expertise-card-title {
+        color: #1a6b3a !important;
+        border-bottom: 1px solid #bbb !important;
+      }
+
+      .expertise-card-tags {
+        color: #111 !important;
+      }
+
+      .expertise-card-tags span {
+        color: #555 !important;
+      }
+
+      .expertise-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+
+      .cv-summary {
+        color: #111 !important;
+      }
+
+      .entry-right {
+        color: #555 !important;
+      }
+
+      .contact-line {
+        color: #444 !important;
+      }
+
+      .contact-line a {
+        color: #444 !important;
+      }
+
+      .contact-sep {
+        color: #bbb !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- NAV -->
+  <div class="cv-nav">
+    <a href="/">← back to site</a>
+    <button class="print-btn" onclick="window.print()">↓ save as pdf</button>
+  </div>
+
+  <!-- NAME -->
+  <div class="name-block">
+    <h1>Clerton Araujo</h1>
+    <div class="tagline">senior full stack engineer &nbsp;·&nbsp; berlin, germany</div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">SUMMARY</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+    <p class="cv-summary">
+      Senior Full Stack Software Engineer with 10+ years building mission-critical platforms across
+      healthcare, fintech, and e-government. Currently at Doctolib (Berlin) leading integration with
+      Germany's national telematic healthcare infrastructure (TI) for 90M+ patients across 300,000+
+      healthcare providers. Holds a Master's in Computer Science (AI specialisation). Specialises in
+      TypeScript/React, Ruby on Rails, Java/Spring, and AWS/Azure. Fluent English; German B1.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">TECHNICAL SKILLS</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+    <div class="skills-section-grid">
+      <div class="label">Frontend</div>
+      <div class="value">TypeScript · JavaScript · React · React Native · Redux · CSS · Design Systems</div>
+
+      <div class="label">Backend</div>
+      <div class="value">Ruby on Rails · Java · Spring Boot · Node.js · .NET Core · Python · Elixir · Scala · OCaml · COBOL</div>
+
+      <div class="label">Cloud &amp; DevOps</div>
+      <div class="value">AWS · Azure · Docker · Kubernetes · CI/CD · Datadog · Sentry</div>
+
+      <div class="label">Databases</div>
+      <div class="value">PostgreSQL · MongoDB · Microsoft SQL Server · Couchbase</div>
+
+      <div class="label">Practices</div>
+      <div class="value">System Design · Microservices · GDPR · eHealth compliance (§75b SGB V) · TDD · Agile/Scrum</div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">EXPERIENCE</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-company">Doctolib</span>
+        <span class="job-period">Oct 2021 → Present</span>
+      </div>
+      <div class="job-title">Senior Full Stack Software Engineer &nbsp;·&nbsp; Berlin</div>
+      <ul class="job-bullets">
+        <li>Architected GDPR and §75b SGB V–compliant security protocols for Germany's national telematic infrastructure (TI), serving 90M+ patients across 300,000+ healthcare providers.</li>
+        <li>Decomposed legacy monolithic Rails application into independently-deployable microservices, reducing release risk and increasing deployment frequency.</li>
+        <li>Led cross-functional technical scoping for 5+ product squads, translating healthcare regulatory requirements into actionable engineering roadmaps.</li>
+        <li>Drove observability adoption (Datadog/Sentry), cutting mean time-to-detect (MTTD) for production incidents.</li>
+      </ul>
+      <div class="stack-line"><span>stack →</span> TypeScript · React · Ruby on Rails · PostgreSQL · Java · Spring · Docker · AWS · Datadog · Sentry</div>
+    </div>
+
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-company">Issuu</span>
+        <span class="job-period">Dec 2020 → Sep 2021</span>
+      </div>
+      <div class="job-title">Full Stack Developer &nbsp;·&nbsp; Berlin</div>
+      <ul class="job-bullets">
+        <li>Optimised user engagement and revenue in collaboration with marketing and product teams.</li>
+        <li>Built and standardised internal Design System, improving UI consistency and development efficiency across multiple squads.</li>
+        <li>Integrated headless CMS, enhancing content management flexibility and reducing time-to-publish.</li>
+      </ul>
+      <div class="stack-line"><span>stack →</span> TypeScript · React · Node.js · Python · Elixir · OCaml · PostgreSQL · Docker · AWS</div>
+    </div>
+
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-company">LQ Enterprise</span>
+        <span class="job-period">Jul 2018 → Dec 2020</span>
+      </div>
+      <div class="job-title">Senior Software Engineer &nbsp;·&nbsp; Berlin</div>
+      <ul class="job-bullets">
+        <li>Delivered secure e-government solutions for the German public sector, meeting strict data protection requirements.</li>
+        <li>Designed and launched an award-winning product, contributing to significant company growth.</li>
+        <li>Developed a multilingual platform supporting Farsi, Arabic, German, and English, expanding user accessibility to underserved communities.</li>
+      </ul>
+      <div class="stack-line"><span>stack →</span> TypeScript · React · .NET Core · PostgreSQL · Azure</div>
+    </div>
+
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-company">Softplan</span>
+        <span class="job-period">May 2017 → Jun 2018</span>
+      </div>
+      <div class="job-title">Software Engineer &nbsp;·&nbsp; Florianópolis</div>
+      <ul class="job-bullets">
+        <li>Developed mobile traffic ticketing system for the Brazilian Federal Police, deployed to officers nationwide.</li>
+        <li>Built a public service portal for Florianópolis City Hall, improving citizen access to municipal services.</li>
+        <li>Created an attorney scheduling system for the Brazilian Government, streamlining legal service allocation.</li>
+      </ul>
+      <div class="stack-line"><span>stack →</span> React · React Native · Java · Scala · Node.js · Spring · MSSQL · Couchbase · Docker</div>
+    </div>
+
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-company">Bradesco Bank</span>
+        <span class="job-period">Nov 2016 → Apr 2017</span>
+      </div>
+      <div class="job-title">Lead Software Developer &nbsp;·&nbsp; Curitiba</div>
+      <ul class="job-bullets">
+        <li>Launched Brazil's first online insurance marketplace, opening a new revenue channel for one of Brazil's largest banks.</li>
+        <li>Led development of geotracking app delivering real-time personalised offers to customers.</li>
+      </ul>
+      <div class="stack-line"><span>stack →</span> Java · Spring · IBM WebSphere · MongoDB · Android · Swift</div>
+    </div>
+
+    <div class="job-block">
+      <div class="job-header">
+        <span class="job-company">HSBC</span>
+        <span class="job-period">Mar 2013 → Oct 2016</span>
+      </div>
+      <div class="job-title">Senior Software Developer &nbsp;·&nbsp; Curitiba</div>
+      <ul class="job-bullets">
+        <li>Maintained public web applications for HSBC Brazil handling 140M+ annual visits, achieving high availability through performance optimisation and redundancy.</li>
+        <li>Implemented global online authentication strategy securing millions of HSBC Brazil online banking accounts.</li>
+        <li>Integrated Java/Spring services with legacy COBOL mainframe systems, enabling modernisation without downtime.</li>
+      </ul>
+      <div class="stack-line"><span>stack →</span> Java · Spring · IBM WebSphere · COBOL mainframe integration</div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">EDUCATION</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+
+    <div class="edu-block">
+      <div class="entry">
+        <div class="edu-degree">Master in Computer Science — Artificial Intelligence</div>
+        <div class="entry-right">2009 – 2011</div>
+      </div>
+      <div class="edu-school">Federal University of Pernambuco &nbsp;·&nbsp; Recife, Brazil</div>
+      <div class="edu-note">Research: Semi-supervised algorithms for cancer gene expression sub-class discovery.</div>
+    </div>
+
+    <div class="edu-block">
+      <div class="entry">
+        <div class="edu-degree">Bachelor in Computer Science</div>
+        <div class="entry-right">2004 – 2009</div>
+      </div>
+      <div class="edu-school">Federal University of Campina Grande &nbsp;·&nbsp; Campina Grande, Brazil</div>
+    </div>
+  </div>
+
+  <!-- PUBLICATIONS -->
+  <div class="section">
+    <div class="section-title">PUBLICATIONS</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+    <div class="publication-block">
+      <div class="publication-title">Semi-supervised Approach for Finding Cancer Sub-classes on Gene Expression Data</div>
+      <div class="publication-meta">
+        ICANN 2010, Springer &nbsp;·&nbsp;
+        <a href="https://link.springer.com/chapter/10.1007/978-3-642-15060-9_3" target="_blank" rel="noopener">doi:10.1007/978-3-642-15060-9_3 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANGUAGES -->
+  <div class="section">
+    <div class="section-title">LANGUAGES</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+    <div class="languages-grid">
+      <div class="lang-name">English</div>
+      <div class="lang-level">Fluent — professional</div>
+
+      <div class="lang-name">Portuguese</div>
+      <div class="lang-level">Native</div>
+
+      <div class="lang-name">German</div>
+      <div class="lang-level">B1 — Certified DTZ 2020</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">CERTIFICATIONS &amp; AWARDS</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+    <div class="entry">
+      <div>Certified Scrum Product Owner</div>
+      <div class="entry-right">2015</div>
+    </div>
+    <div class="entry">
+      <div>HSBC Team Awards</div>
+      <div class="entry-right">2015, 2016</div>
+    </div>
+    <div class="entry">
+      <div>Deutsch-Test für Zuwanderer (DTZ) — B1</div>
+      <div class="entry-right">2020</div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <div class="section-title">CONTACT</div>
+    <div class="rule muted">───────────────────────────────────────────────────────────────────────────────</div>
+    <br>
+    <div class="contact-line">
+      <span>Clerton Araujo</span>
+      <span class="contact-sep">▕</span>
+      <a href="mailto:clertonfilho@gmail.com">clertonfilho@gmail.com</a>
+      <span class="contact-sep">▕</span>
+      <a href="https://www.linkedin.com/in/clerton/" target="_blank" rel="noopener">linkedin.com/in/clerton</a>
+      <span class="contact-sep">▕</span>
+      <a href="https://github.com/clertonraf" target="_blank" rel="noopener">github.com/clertonraf</a>
+      <span class="contact-sep">▕</span>
+      <span>Berlin, Germany</span>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
